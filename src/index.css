@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Aptos', 'Segoe UI', sans-serif;
+  color-scheme: dark;
+  color: #f5f2ef;
+  background: #0c0c0c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  --page: #0c0c0c;
+  --paper: #171717;
+  --paper-soft: #24201c;
+  --ink: #f5f2ef;
+  --muted: #b8b1aa;
+  --line: #3d3732;
+  --accent: #ff8a34;
+  --accent-hover: #ffa65f;
+  --green: #ff9a50;
+  --green-strong: #ffba84;
+  --green-soft: #332317;
+  --green-line: #ff8a34;
+  --coral: #f0a69b;
+  --coral-soft: #412e2d;
+  --coral-line: #704745;
+  --shadow: 0 22px 60px rgb(0 0 0 / 20%), 0 2px 7px rgb(0 0 0 / 12%);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+button, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+#root { min-height: 100vh; }
